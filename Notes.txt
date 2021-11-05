@@ -1,0 +1,11 @@
+Building a fancyAF calculator --> build a beautiful stopwatch on the lines of fast.com
+
+Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+A good guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Grids - https://www.w3schools.com/css/css_grid.asp
+
+
+Gradients - https://www.w3schools.com/css/css3_gradients.asp
+
+Data Attribute - https://www.w3schools.com/tags/att_data-.asp
+JS Classes [Not Neccessary but Recommended] - https://www.w3schools.com/js/js_class_intro.asp
