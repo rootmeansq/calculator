@@ -6,6 +6,9 @@ const allClearButton = document.querySelector('[data-all-clear]')
 const previousOperandText = document.querySelector('[data-previous-operand]')
 const currentOperandText = document.querySelector('[data-current-operand]')
 
+equalsButton.addEventListener('click', equalExe) 
+allClearButton.addEventListener('click', clearExe)
+deleteButton.addEventListener('click', deleteExe)
 
 
 class Calculator{
@@ -90,7 +93,7 @@ class Calculator{
         } else {
             return integerDisplay
         }
-        console.log(number)
+        console.log(integerDisplay)
     }
 
     updateDisplayNum() {
@@ -120,20 +123,27 @@ operationButtons.forEach(button => {
     calculator.selectOperation(button.innerText)
     calculator.updateDisplayNum()
   })
-})
-/*
-equalsButton.addEventListener('click', button=>{
-  calculator.compute()
-  calculator.updateDisplayNum()
-})
+});
 
-allClearButton.addEventListener('click', button=>{
+
+
+
+function equalExe(){
+    calculator.compute()
+    calculator.updateDisplayNum()  
+};
+
+
+
+function clearExe(){
   calculator.clear()
   calculator.updateDisplayNum()
-})
+};
 
-deleteButton.addEventListener('click', button => {
+
+
+function deleteExe(){
   calculator.delete()
   calculator.updateDisplayNum()
-})
- */
+}
+ 
